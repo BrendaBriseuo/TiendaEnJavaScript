@@ -4,7 +4,7 @@ body{
 }
 
 .elemento{color: rgb(240, 174, 158);text-align:center;}
-#titulo_principal{color:rgb(218, 101, 218);font-size: 2em;text-align: center;font-weight:bolder;}
+.titulo_principal{color:rgb(218, 101, 218);font-size: 2em;text-align: center;font-weight:bolder;}
 #tabla-inicio{color: rgb(236, 192, 141);font-size: 70;}
 #parrafo{margin-left: 20;}
 .imagenes{
@@ -49,4 +49,14 @@ body{
 .reloj .ampm{
 font-size: 1rem;
 display: block;
+}
+
+.multiplicacion{
+    font-style: italic;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0.3125rem;   
+    background: rgba(0,0,0,.5);
+    padding: 20px;
+    width: 100%;
 }
