@@ -2,8 +2,8 @@
 (function (){
 
 var 
-precio = 5,
-cantidad=8,
+precio = 650,
+cantidad=2,
 total=precio*cantidad;
 
 var pPrecio = document.getElementById('precio');
