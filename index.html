@@ -34,21 +34,33 @@
 </div> 
 <script src="../../TiendaEnJavaScript/hora.js" language="javascript" type="text/javascript"></script>
 <form>
-<div class="wrap">
-    <div class="widget">
+
+    <P id="costo">"COSTO"</P>
         <div class="multiplicacion">  
-            <p  >precio</p> 
-            <p id="precio"class="precio" ></p> 
-            <p  >x</p>  
-            <p id="cantidad"class="cantidad" ></p> 
-            <p  >unidades</p> <p  >=</p>  <p  >$</p> 
-            <p id="total"class="total" ></p> 
+          <input type="text" placeholder="escribe la cantidad" id="cantidad"> 
+          <input type="text" placeholder="escribe el precio " id="precio"> 
+          <input type="button" value="click"  onclick="multi()" > 
+         
+          
            
 </div>
-</div>
-</div> 
+<script>
+    function multi(){
+
+var 
+cantidad = parseInt(document.getElementById('cantidad').value),
+precio = parseInt(document.getElementById('precio').value);
+
+
+var resultado;
+resultado=cantidad*precio;
+alert("El costo es :"+resultado);
+
+} 
+</script>
+
 </form>
-<script src="../../TiendaEnJavaScript/precio.js" language="javascript" type="text/javascript"></script>
+
 
 
 
