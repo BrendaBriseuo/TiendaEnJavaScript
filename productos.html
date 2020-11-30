@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UFT-8"/>
+    <title>Arreglos</title>
+
+<script src="../../Desktop/TiendaEnJavaScript/MWT2A5_Arreglos/js/arreglos.js" language="javascript" type="text/javascript"></script>
+</head>
+<body style="background-color: rgb(123, 212, 82);text-align: center;">
+   
+ <h1>Listado de productos</h1>
+
+ <br>
+ <div style="color: white;font-size: 1.3cm;">
+    <p id="art";></p> 
+
+  <script>
+  articulos.forEach(function(element){
+    console.log(element);
+   document.getElementById("art").innerHTML=articulos; // .innerHTML = element; seria correcto pero como tambien quiero que me muestre lo que pasa con los metodos dejo articulos 
+  });</script>
+  
+</div>
+</body>
+</html>
