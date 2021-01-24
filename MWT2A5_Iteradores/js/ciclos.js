@@ -37,9 +37,47 @@ for (var i=1; i<=cantidad;i++){
         }
             
 }
+
+
+
+//recorra un arreglo de números y encuentre el número máximo y el número mínimo del arreglo
+document.write("Encuentre maximo de los siguientes numeros <br>");
+document.write("0,10,25,58,12<br>");
+var arreglo  = [0,10,25,58,12];
+    maximo = 0;
+    minimo = 0;
+
+for(var i=0,len=arreglo .length;i<len;i++){
+    if(maximo < arreglo [i]){
+        maximo = arreglo [i];
+    }
+    if(minimo > arreglo [i]){
+        minimo = arreglo [i];
+    }
+}
  
+document.write("El numero maximo es: "+maximo+"<br>");
+document.write("El numero minimo es: "+minimo+"<br>");
+
+
 //do-while
 //Pedir cinco datos de precios y mostrar el promedio de estos.
+// //do-while
+// //Pedir cinco datos de precios y mostrar el promedio de estos.
+// var datos =0 ,prom=0.0,limite=0;
+// var datosPrecios=0;
+// var suma=0;
+// limite= parseInt(prompt("¿Cuantos datos de precio quiere ingresar:"));
+// do{
+//     datosPrecios=parseInt(prompt('Ingrese los precios:'));
+
+//         suma += datosPrecios;
+//         datos++;
+// }while (datos<limite)
+// prom=suma/limite;
+// document.write("<br> la suma total es de:",suma,"<br> y el promedio es",prom);
+
+
 // document.write("<h1>Pedir datos y mostrar promedio <h1><br>")
 // var suma,cant,valor,promedio;
 // suma=0;
@@ -69,26 +107,3 @@ for (var i=1; i<=cantidad;i++){
 // alert("Su promedio es: "+p)
 
 
-//Pedir 10 datos de precios e irlos sumando, al final debe mostrar el total de la suma. 
-document.write("<h1>Pedir 10 datos y sumar mostrar total <h1><br>")
-
-
-
-//recorra un arreglo de números y encuentre el número máximo y el número mínimo del arreglo
-document.write("Encuentre maximo de los siguientes numeros <br>");
-document.write("0,10,25,58,12<br>");
-var arreglo  = [0,10,25,58,12];
-    maximo = 0;
-    minimo = 0;
-
-for(var i=0,len=arreglo .length;i<len;i++){
-    if(maximo < arreglo [i]){
-        maximo = arreglo [i];
-    }
-    if(minimo > arreglo [i]){
-        minimo = arreglo [i];
-    }
-}
- 
-document.write("El numero maximo es: "+maximo+"<br>");
-document.write("El numero minimo es: "+minimo+"<br>");
