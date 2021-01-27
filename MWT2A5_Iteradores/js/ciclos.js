@@ -39,25 +39,28 @@ for (var i=1; i<=cantidad;i++){
 }
 
 
+//Recorra un arreglo de números y encuentre el número máximo y el número mínimo del arreglo
+document.write("<br>Encuentre maximo y minimo de los siguientes numeros <br>");
+document.write("1,10,25,58,12<br>");
+var arr=[13,1,10,25,58,12];
+var size=arr.length;
 
-//recorra un arreglo de números y encuentre el número máximo y el número mínimo del arreglo
-document.write("Encuentre maximo de los siguientes numeros <br>");
-document.write("0,10,25,58,12<br>");
-var arreglo  = [0,10,25,58,12];
-    maximo = 0;
-    minimo = 0;
+var maximo =arr [0];
+var minimo =arr [0];
 
-for(var i=0,len=arreglo .length;i<len;i++){
-    if(maximo < arreglo [i]){
-        maximo = arreglo [i];
+for (var i=0;i<size; i++){
+
+    if (arr[i]>maximo){
+        maximo= arr[i];
     }
-    if(minimo > arreglo [i]){
-        minimo = arreglo [i];
+    if (arr[i]<minimo){
+        minimo= arr[i];
     }
 }
- 
-document.write("El numero maximo es: "+maximo+"<br>");
-document.write("El numero minimo es: "+minimo+"<br>");
+
+document.write(`el maximo es:${maximo} y el minimo es:${minimo}`);
+
+
 
 
 //do-while
